@@ -1,0 +1,515 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>PT.API</name>
+    </assembly>
+    <members>
+        <member name="T:PT.API.Controllers.ActionController">
+            <summary>
+            Action
+            </summary>
+        </member>
+        <member name="M:PT.API.Controllers.ActionController.#ctor(MediatR.IMediator)">
+            <summary>
+            Action
+            </summary>
+            <param name="mediator"></param>
+        </member>
+        <member name="M:PT.API.Controllers.ActionController.GetAction(System.Guid)">
+            <summary>
+            Get Action By Id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PT.API.Controllers.ActionController.GetActions">
+            <summary>
+            Get All Actions
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PT.API.Controllers.ActionController.AddAction(PT.MediatR.Commands.AddActionCommand)">
+            <summary>
+            Create A Action
+            </summary>
+            <param name="addActionCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PT.API.Controllers.ActionController.UpdateAction(System.Guid,PT.MediatR.Commands.UpdateActionCommand)">
+            <summary>
+            Update Exist Action By Id
+            </summary>
+            <param name="Id"></param>
+            <param name="updateActionCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PT.API.Controllers.ActionController.DeleteAction(System.Guid)">
+            <summary>
+            Delete Action By Id
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:PT.API.Controllers.AppSetting.AppSettingController">
+            <summary>
+            App Setting
+            </summary>
+        </member>
+        <member name="M:PT.API.Controllers.AppSetting.AppSettingController.#ctor(MediatR.IMediator,Microsoft.Extensions.Logging.ILogger{PT.API.Controllers.AppSetting.AppSettingController})">
+            <summary>
+            App Setting
+            </summary>
+            <param name="mediator"></param>
+            <param name="logger"></param>
+        </member>
+        <member name="M:PT.API.Controllers.AppSetting.AppSettingController.AddAppSetting(PT.MediatR.Commands.AddAppSettingCommand)">
+            <summary>
+            Create  Appsetting
+            </summary>
+            <param name="addAppSettingCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PT.API.Controllers.AppSetting.AppSettingController.UpdateAppSetting(System.Guid,PT.MediatR.Commands.UpdateAppSettingCommand)">
+            <summary>
+            Update Exist AppSetting By Id
+            </summary>
+            <param name="id"></param>
+            <param name="updateAppSettingCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PT.API.Controllers.AppSetting.AppSettingController.GetAppSetting(System.Guid)">
+            <summary>
+            Get AppSetting By Id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PT.API.Controllers.AppSetting.AppSettingController.GetAppSettingByKey(System.String)">
+            <summary>
+            Get AppSetting By Key
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PT.API.Controllers.AppSetting.AppSettingController.GetAppSettings">
+            <summary>
+            Get All AppSettings
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PT.API.Controllers.AppSetting.AppSettingController.DeleteAppSetting(System.Guid)">
+            <summary>
+            Delete AppSetting By Id
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PT.API.Controllers.Dashboard.DashboardController.GetActiveUserCount">
+            <summary>
+            Get Active User Count
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PT.API.Controllers.Dashboard.DashboardController.GetInactiveUserCount">
+            <summary>
+            Get Inactive User Count
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PT.API.Controllers.Dashboard.DashboardController.GetTotalUserCount">
+            <summary>
+            Get Total user count
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PT.API.Controllers.Dashboard.DashboardController.GetOnlineUsers">
+            <summary>
+            Gets the online users.
+            </summary>
+            <param name="userIds">The user ids.</param>
+            <returns></returns>
+        </member>
+        <member name="M:PT.API.Controllers.EmailTemplate.EmailTemplateController.#ctor(MediatR.IMediator,Microsoft.Extensions.Logging.ILogger{PT.API.Controllers.EmailTemplate.EmailTemplateController})">
+            <summary>
+            Role
+            </summary>
+            <param name="mediator"></param>
+            <param name="logger"></param>
+        </member>
+        <member name="M:PT.API.Controllers.EmailTemplate.EmailTemplateController.AddEmailTemplate(PT.MediatR.Commands.AddEmailTemplateCommand)">
+            <summary>
+            Create  Email Template
+            </summary>
+            <param name="addEmailTemplateCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PT.API.Controllers.EmailTemplate.EmailTemplateController.UpdateAppSetting(System.Guid,PT.MediatR.Commands.UpdateEmailTemplateCommand)">
+            <summary>
+            Update Exist AppSetting By Id
+            </summary>
+            <param name="id"></param>
+            <param name="updateEmailTemplateCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PT.API.Controllers.EmailTemplate.EmailTemplateController.GetEmailTemplate(System.Guid)">
+            <summary>
+            Get Email Template By Id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PT.API.Controllers.EmailTemplate.EmailTemplateController.GetEmailTemplates">
+            <summary>
+            Get All Email Templates
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PT.API.Controllers.EmailTemplate.EmailTemplateController.DelterEmailTemplate(System.Guid)">
+            <summary>
+            Delete Email Template By Id
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PT.API.Controllers.Email.EmailController.SendEmail(PT.MediatR.Commands.SendEmailCommand)">
+            <summary>
+            Send mail.
+            </summary>
+            <param name="sendEmailCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PT.API.Controllers.Email.EmailSMTPSettingController.AddEmailSMTPSetting(PT.MediatR.Commands.AddEmailSMTPSettingCommand)">
+            <summary>
+            Create an Email SMTP Configuration.
+            </summary>
+            <param name="addEmailSMTPSettingCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PT.API.Controllers.Email.EmailSMTPSettingController.GetEmailSMTPSetting(System.Guid)">
+            <summary>
+            Get Email SMTP Configuration.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PT.API.Controllers.Email.EmailSMTPSettingController.GetEmailSMTPSettings">
+            <summary>
+            Get Email SMTP Configuration list.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PT.API.Controllers.Email.EmailSMTPSettingController.UpdateEmailSMTPSetting(System.Guid,PT.MediatR.Commands.UpdateEmailSMTPSettingCommand)">
+            <summary>
+            Update an Email SMTP Configuration.
+            </summary>
+            <param name="addEmailSMTPSettingCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PT.API.Controllers.Email.EmailSMTPSettingController.DeleteEmailSMTPSetting(System.Guid)">
+            <summary>
+            Delete an Email SMTP Configuration.
+            </summary>
+            <param name="addEmailSMTPSettingCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PT.API.Controllers.LoginAudit.LoginAuditController.GetLoginAudit(PT.Data.Resources.LoginAuditResource)">
+            <summary>
+            Get All Login Audit detail
+            </summary>
+            <param name="loginAuditResource"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PT.API.Controllers.NLogController.GetNLogs(PT.Data.Resources.NLogResource)">
+            <summary>
+            Get System Logs
+            </summary>
+            <param name="nLogResource"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PT.API.Controllers.NLogController.GetNLog(System.Guid)">
+            <summary>
+            Get Log By Id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PT.API.Controllers.NLogController.CreatNLog(PT.MediatR.Commands.AddLogCommand)">
+            <summary>
+            Create Log.
+            </summary>
+            <param name="addLogCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="T:PT.API.Controllers.PageActionController">
+            <summary>
+            Page Action
+            </summary>
+        </member>
+        <member name="M:PT.API.Controllers.PageActionController.#ctor(MediatR.IMediator)">
+            <summary>
+            Page Action
+            </summary>
+            <param name="mediator"></param>
+        </member>
+        <member name="M:PT.API.Controllers.PageActionController.GetPageActions">
+            <summary>
+            Get All Page Actions
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PT.API.Controllers.PageActionController.AddPageAction(PT.MediatR.Commands.AddPageActionCommand)">
+            <summary>
+            Add Page Action
+            </summary>
+            <param name="addPageActionCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PT.API.Controllers.PageActionController.DeletePageAction(System.Guid)">
+            <summary>
+            Delete Page Action By Id
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:PT.API.Controllers.PageController">
+            <summary>
+            Page
+            </summary>
+        </member>
+        <member name="M:PT.API.Controllers.PageController.#ctor(MediatR.IMediator)">
+            <summary>
+            Page
+            </summary>
+            <param name="mediator"></param>
+        </member>
+        <member name="M:PT.API.Controllers.PageController.GetPage(System.Guid)">
+            <summary>
+            Get Page By Id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PT.API.Controllers.PageController.GetPages">
+            <summary>
+            Get All Pages
+            </summary>
+            <returns>Test</returns>
+            <response code="200">Returns the newly created item</response>
+        </member>
+        <member name="M:PT.API.Controllers.PageController.AddPage(PT.MediatR.Commands.AddPageCommand)">
+            <summary>
+            Create a Page
+            </summary>
+            <param name="addPageCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PT.API.Controllers.PageController.UpdatePage(System.Guid,PT.MediatR.Commands.UpdatePageCommand)">
+            <summary>
+            Update Page By Id
+            </summary>
+            <param name="Id"></param>
+            <param name="updatePageCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PT.API.Controllers.PageController.DeletePage(System.Guid)">
+            <summary>
+            Delete Page By Id
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:PT.API.Controllers.RoleController">
+            <summary>
+            Role
+            </summary>
+        </member>
+        <member name="M:PT.API.Controllers.RoleController.#ctor(MediatR.IMediator)">
+            <summary>
+            Role
+            </summary>
+            <param name="mediator"></param>
+            <param name="logger"></param>
+        </member>
+        <member name="M:PT.API.Controllers.RoleController.AddRole(PT.MediatR.Commands.AddRoleCommand)">
+            <summary>
+            Create A Role
+            </summary>
+            <param name="addRoleCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PT.API.Controllers.RoleController.UpdateRole(System.Guid,PT.MediatR.Commands.UpdateRoleCommand)">
+            <summary>
+            Update Exist Role By Id
+            </summary>
+            <param name="id"></param>
+            <param name="updateRoleCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PT.API.Controllers.RoleController.GetRole(System.Guid)">
+            <summary>
+            Get Role By Id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PT.API.Controllers.RoleController.GetRoles">
+            <summary>
+            Get All Roles
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PT.API.Controllers.RoleController.DeleteRole(System.Guid)">
+            <summary>
+            Delete Role By Id
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:PT.API.Controllers.RoleUsersController">
+            <summary>
+            RoleUsers
+            </summary>
+        </member>
+        <member name="M:PT.API.Controllers.RoleUsersController.#ctor(MediatR.IMediator)">
+            <summary>
+            RoleUsers
+            </summary>
+            <param name="mediator"></param>
+            <param name="logger"></param>
+        </member>
+        <member name="M:PT.API.Controllers.RoleUsersController.RoleUsers(System.Guid)">
+            <summary>
+            Get Role Users By Id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PT.API.Controllers.RoleUsersController.UpdateRoleUsers(System.Guid,PT.MediatR.Commands.UpdateUserRoleCommand)">
+            <summary>
+            Update Role Users By Id
+            </summary>
+            <param name="id"></param>
+            <param name="updateRoleCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="T:PT.API.Controllers.UserClaimController">
+            <summary>
+            UserClaim
+            </summary>
+        </member>
+        <member name="M:PT.API.Controllers.UserClaimController.#ctor(MediatR.IMediator)">
+            <summary>
+            UserClaim
+            </summary>
+            <param name="mediator"></param>
+        </member>
+        <member name="M:PT.API.Controllers.UserClaimController.UpdateUserClaim(System.Guid,PT.MediatR.Commands.UpdateUserClaimCommand)">
+            <summary>
+            Update User Claim By Id
+            </summary>
+            <param name="id"></param>
+            <param name="addUserCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="T:PT.API.Controllers.UserController">
+            <summary>
+            User
+            </summary>
+        </member>
+        <member name="M:PT.API.Controllers.UserController.#ctor(MediatR.IMediator,PT.Data.Dto.UserInfoToken,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
+            <summary>
+            User
+            </summary>
+            <param name="mediator"></param>
+            <param name="userInfo"></param>
+        </member>
+        <member name="M:PT.API.Controllers.UserController.AddUser(PT.MediatR.Commands.AddUserCommand)">
+            <summary>
+             Create a User
+            </summary>
+            <param name="addUserCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PT.API.Controllers.UserController.GetAllUsers">
+            <summary>
+            Get All Users
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PT.API.Controllers.UserController.GetUser(System.Guid)">
+            <summary>
+            Get User By Id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PT.API.Controllers.UserController.GetUsers(PT.Data.Resources.UserResource)">
+            <summary>
+            Get Users
+            </summary>
+            <param name="userResource"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PT.API.Controllers.UserController.GetRecentlyRegisteredUsers">
+            <summary>
+            Get Recently Registered Users
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PT.API.Controllers.UserController.UserLogin(PT.MediatR.Commands.UserLoginCommand)">
+            <summary>
+            User Login
+            </summary>
+            <param name="userLoginCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PT.API.Controllers.UserController.UpdateUser(System.Guid,PT.MediatR.Commands.UpdateUserCommand)">
+            <summary>
+            Update User By Id
+            </summary>
+            <param name="id"></param>
+            <param name="updateUserCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PT.API.Controllers.UserController.UpdateUserProfile(PT.MediatR.Commands.UpdateUserProfileCommand)">
+            <summary>
+            Update Profile
+            </summary>
+            <param name="id"></param>
+            <param name="updateUserProfileCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PT.API.Controllers.UserController.UpdateUserProfilePhoto">
+            <summary>
+            Update Profile photo
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:PT.API.Controllers.UserController.DeleteUser(System.Guid)">
+            <summary>
+            Delete User By Id
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PT.API.Controllers.UserController.ChangePassword(PT.MediatR.Commands.ChangePasswordCommand)">
+            <summary>
+            User Change Password
+            </summary>
+            <param name="resetPasswordCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PT.API.Controllers.UserController.ResetPassword(PT.MediatR.Commands.ResetPasswordCommand)">
+            <summary>
+            Reset Resetpassword
+            </summary>
+            <param name="newPasswordCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PT.API.Controllers.UserController.GetProfile">
+            <summary>
+            Get User Profile
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

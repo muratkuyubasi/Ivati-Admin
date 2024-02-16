@@ -1,0 +1,1442 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>IsvecDiyanet.API</name>
+    </assembly>
+    <members>
+        <member name="T:IsvecDiyanet.API.Controllers.ActionController">
+            <summary>
+            Action
+            </summary>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.ActionController.#ctor(MediatR.IMediator)">
+            <summary>
+            Action
+            </summary>
+            <param name="mediator"></param>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.ActionController.GetAction(System.Guid)">
+            <summary>
+            Get Action By Id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.ActionController.GetActions">
+            <summary>
+            Get All Actions
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.ActionController.AddAction(IsvecDiyanet.MediatR.Commands.AddActionCommand)">
+            <summary>
+            Create A Action
+            </summary>
+            <param name="addActionCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.ActionController.UpdateAction(System.Guid,IsvecDiyanet.MediatR.Commands.UpdateActionCommand)">
+            <summary>
+            Update Exist Action By Id
+            </summary>
+            <param name="Id"></param>
+            <param name="updateActionCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.ActionController.DeleteAction(System.Guid)">
+            <summary>
+            Delete Action By Id
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.Activity.ActivityController.GetAllActivities">
+            <summary>Get All Activities</summary><return></return>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.Activity.ActivityController.GetById(System.Int32)">
+            <summary>Get Activity By Id</summary><return></return>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.Activity.ActivityController.Create(IsvecDiyanet.MediatR.Commands.AddActivityCommand)">
+            <summary>Create Activity</summary><return></return>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.Activity.ActivityController.Update(IsvecDiyanet.MediatR.Commands.UpdateActivityCommand)">
+            <summary>Update Activity</summary><return></return>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.Activity.ActivityController.Delete(System.Int32)">
+            <summary>Delete Activity</summary><return></return>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.Age.AgeController.GetAll">
+            <summary> Get All Age Ranges </summary><returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.Age.AgeController.GetAgeByDate(System.DateTime)">
+            <summary> Get Age By Date </summary><returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.Age.AgeController.GetById(System.Int32)">
+            <summary> Get Age Range By Id</summary><returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.Age.AgeController.GetByMinAndMaxAge(System.Int32,System.Int32)">
+            <summary> Get Amount By Min Age between Max Age</summary><returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.Age.AgeController.Add(IsvecDiyanet.MediatR.Commands.AddAgeCommand)">
+            <summary> Add New Age Range </summary><returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.Age.AgeController.Change(System.Decimal)">
+            <summary> Change Annual Dues</summary><returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.Age.AgeController.Update(IsvecDiyanet.MediatR.Commands.UpdateAgeCommand)">
+            <summary> Update Age Range </summary><returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.Age.AgeController.Delete(System.Int32)">
+            <summary> Delete Age Range </summary><returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.Airport.AirportController.GetAllAirports">
+            <summary>Get All Airports</summary><return></return>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.Airport.AirportController.GetById(System.Int32)">
+            <summary>Get Airport By Id</summary><return></return>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.Airport.AirportController.Add(IsvecDiyanet.MediatR.Commands.AddAirportCommand)">
+            <summary>Add New Airport</summary><return></return>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.Airport.AirportController.Update(IsvecDiyanet.MediatR.Commands.UpdateAirportCommand)">
+            <summary>Update Airport</summary><return></return>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.Airport.AirportController.Delete(System.Int32)">
+            <summary>Delete Airport</summary>
+        </member>
+        <member name="T:IsvecDiyanet.API.Controllers.AppSetting.AppSettingController">
+            <summary>
+            App Setting
+            </summary>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.AppSetting.AppSettingController.#ctor(MediatR.IMediator,Microsoft.Extensions.Logging.ILogger{IsvecDiyanet.API.Controllers.AppSetting.AppSettingController})">
+            <summary>
+            App Setting
+            </summary>
+            <param name="mediator"></param>
+            <param name="logger"></param>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.AppSetting.AppSettingController.AddAppSetting(IsvecDiyanet.MediatR.Commands.AddAppSettingCommand)">
+            <summary>
+            Create  Appsetting
+            </summary>
+            <param name="addAppSettingCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.AppSetting.AppSettingController.UpdateAppSetting(System.Guid,IsvecDiyanet.MediatR.Commands.UpdateAppSettingCommand)">
+            <summary>
+            Update Exist AppSetting By Id
+            </summary>
+            <param name="id"></param>
+            <param name="updateAppSettingCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.AppSetting.AppSettingController.GetAppSetting(System.Guid)">
+            <summary>
+            Get AppSetting By Id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.AppSetting.AppSettingController.GetAppSettingByKey(System.String)">
+            <summary>
+            Get AppSetting By Key
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.AppSetting.AppSettingController.GetAppSettingJustByKey(System.String)">
+            <summary>
+            Get AppSetting By Key
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.AppSetting.AppSettingController.GetAppSettings">
+            <summary>
+            Get All AppSettings
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.AppSetting.AppSettingController.DeleteAppSetting(System.Guid)">
+            <summary>
+            Delete AppSetting By Id
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.AssociationController.GetAllAssociations">
+            <summary>Get All Associations</summary>
+            <return></return>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.AssociationController.GetById(System.Int32)">
+            <summary>Get Association By Id</summary><return></return>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.AssociationController.Add(IsvecDiyanet.MediatR.Commands.AddAssociationCommand)">
+            <summary>Add New Association</summary><return></return>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.AssociationController.Update(IsvecDiyanet.MediatR.Commands.UpdateAssociationCommand)">
+            <summary>Update Association</summary><return></return>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.AssociationController.Delete(System.Int32)">
+            <summary>Delete Association</summary>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.City.CityController.GetAllAirports">
+            <summary>Get All Cities</summary><return></return>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.City.CityController.GetById(System.Int32)">
+            <summary>Get City By Id</summary><return></return>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.City.CityController.Add(IsvecDiyanet.MediatR.Commands.AddCityCommand)">
+            <summary>Add New City</summary><return></return>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.City.CityController.Update(IsvecDiyanet.MediatR.Commands.UpdateCityCommand)">
+            <summary>Update City</summary><return></return>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.City.CityController.Delete(System.Int32)">
+            <summary>Delete Airport</summary>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.ClergyController.GetAll">
+            <summary>Get All Clergies</summary><return></return>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.ClergyController.GetById(System.Int32)">
+            <summary>Get Clergy By Id</summary><return></return>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.ClergyController.Add(IsvecDiyanet.MediatR.Commands.AddClergyCommand)">
+            <summary>Add Clergy</summary><return></return>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.ClergyController.Update(IsvecDiyanet.MediatR.Commands.UpdateClergyCommand)">
+            <summary>Update Clergy</summary><return></return>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.ClergyController.Delete(System.Int32)">
+            <summary>Delete Clergy</summary><return></return>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.Country.CountryController.GetAllAirports">
+            <summary>Get All Countries</summary><return></return>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.Country.CountryController.GetById(System.Int32)">
+            <summary>Get Country By Id</summary><return></return>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.Country.CountryController.GetByLangcode(System.String)">
+            <summary>Get Country By Langcode</summary><return></return>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.Country.CountryController.Add(IsvecDiyanet.MediatR.Commands.AddCountryCommand)">
+            <summary>Add New Country</summary><return></return>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.Country.CountryController.Update(IsvecDiyanet.MediatR.Commands.UpdateCountryCommand)">
+            <summary>Update Country</summary><return></return>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.Country.CountryController.Delete(System.Int32)">
+            <summary>Delete Airport</summary>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.Dashboard.DashboardController.GetActiveUserCount">
+            <summary>
+            Get Active User Count
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.Dashboard.DashboardController.GetInactiveUserCount">
+            <summary>
+            Get Inactive User Count
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.Dashboard.DashboardController.GetTotalDeletedUserCount">
+            <summary>
+            Get Total Deleted User Count
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.Dashboard.DashboardController.GetTotalUserCount">
+            <summary>
+            Get Total user count
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.Dashboard.DashboardController.GetDiedMembersCountByYear">
+            <summary>
+            Get Died Members Count By Year
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.Dashboard.DashboardController.GetOnlineUsers">
+            <summary>
+            Gets the online users.
+            </summary>
+            <param name="userIds">The user ids.</param>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.Dashboard.DashboardController.GetHacPilgrimCountByAssociation">
+            <summary>
+            Get Hac Pilgrim Count By Association
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.Dashboard.DashboardController.GetHacMenAndWomenCount">
+            <summary>
+            Get Hac Men And Women Count 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.Dashboard.DashboardController.GetHacPilgrimCountByDepartureAirport">
+            <summary>
+            Get Hac Pilgrim Count By Departure Airport
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.Dashboard.DashboardController.GetHacPilgrimCountByLandingAirport">
+            <summary>
+            Get Hac Pilgrim Count By Landing Airport
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.Dashboard.DashboardController.GetUmrePilgrimCountByAssociation">
+            <summary>
+            Get Umre Pilgrim Count By Association
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.Dashboard.DashboardController.GetUmreMenAndWomenCount">
+            <summary>
+            Get Umre Men And Women Count 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.Dashboard.DashboardController.GetUmrePilgrimCountByDepartureAirport">
+            <summary>
+            Get Umre Pilgrim Count By Departure Airport
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.Dashboard.DashboardController.GetUmrePilgrimCountByLandingAirport">
+            <summary>
+            Get Umre Pilgrim Count By Landing Airport
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.Dashboard.DashboardController.GetUnpaidDebtorsCount">
+            <summary>
+            Get Unpaid Debtors Count
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.Dashboard.DashboardController.GetPaidDebtorsCount">
+            <summary>
+            Get Paid Debtors Count
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.Dashboard.DashboardController.GetDebtorsIncomeByYear">
+            <summary>
+            Get Debtors Income By Year
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.DebtorTypeController.GetAllDebtorTypes">
+            <summary>Get All Debtor Types</summary><return></return>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.DebtorTypeController.GetById(System.Int32)">
+            <summary>Get Debtor Type By Id</summary><return></return>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.DebtorTypeController.Add(IsvecDiyanet.MediatR.Commands.AddDebtorTypeCommand)">
+            <summary>Add New Debtor Type</summary><return></return>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.DebtorTypeController.Update(IsvecDiyanet.MediatR.Commands.UpdateDebtorTypeCommand)">
+            <summary>Update Debtor Type</summary><return></return>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.DebtorTypeController.Delete(System.Int32)">
+            <summary>Delete Debtor Type</summary>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.Debtor.DebtorController.Add(IsvecDiyanet.MediatR.Commands.AddDebtorCommand)">
+            <summary>Add Debtor</summary><return></return>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.Debtor.DebtorController.GetAllDebtors(System.Int32,System.Int32,System.Int32,System.Nullable{System.Boolean},System.String)">
+            <summary>
+            Get All Debtors Pagination
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.Debtor.DebtorController.FamilyDebtPayment(System.Guid,System.String)">
+            <summary> Family Debt Payment</summary>
+             <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.Debtor.DebtorController.UpdateDebtorInformation(IsvecDiyanet.MediatR.Commands.UpdateDebtorsCommand)">
+            <summary> Update Debtor Information </summary>
+             <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.Debtor.DebtorController.SetPenaltyFee">
+            <summary>
+            Set 150 Kron For Penalty Fee
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.Debtor.DebtorController.DeleteDebtorById(System.Guid,System.String)">
+            <summary>
+            Delete Debtor 
+            </summary>
+            <param name="familyId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.Debtor.DebtorController.GetIncomeByYear(System.String)">
+            <summary>
+            Get Income By Year
+            </summary>
+            <param name="year"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.Debtor.DebtorController.GetDebtorByYear">
+            <summary>
+            Get Debtor By Year
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.Debtor.DebtorController.YillikFaturaBas(System.String)">
+            <summary>
+            Yillik Fatura Bas
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.Debtor.DebtorController.SaveDebtorsToFolder(System.Boolean,System.Int32)">
+            <summary>
+            Save Debtors to Folder
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.Debtor.DebtorController.CheckDebtorFile(System.Int32)">
+            <summary> Check Debtor PDF File </summary> <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.EmailTemplate.EmailTemplateController.#ctor(MediatR.IMediator,Microsoft.Extensions.Logging.ILogger{IsvecDiyanet.API.Controllers.EmailTemplate.EmailTemplateController})">
+            <summary>
+            Role
+            </summary>
+            <param name="mediator"></param>
+            <param name="logger"></param>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.EmailTemplate.EmailTemplateController.AddEmailTemplate(IsvecDiyanet.MediatR.Commands.AddEmailTemplateCommand)">
+            <summary>
+            Create  Email Template
+            </summary>
+            <param name="addEmailTemplateCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.EmailTemplate.EmailTemplateController.UpdateAppSetting(System.Guid,IsvecDiyanet.MediatR.Commands.UpdateEmailTemplateCommand)">
+            <summary>
+            Update Exist AppSetting By Id
+            </summary>
+            <param name="id"></param>
+            <param name="updateEmailTemplateCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.EmailTemplate.EmailTemplateController.GetEmailTemplate(System.Guid)">
+            <summary>
+            Get Email Template By Id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.EmailTemplate.EmailTemplateController.GetEmailTemplates">
+            <summary>
+            Get All Email Templates
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.EmailTemplate.EmailTemplateController.DelterEmailTemplate(System.Guid)">
+            <summary>
+            Delete Email Template By Id
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.Email.EmailController.SendEmail(IsvecDiyanet.MediatR.Commands.SendEmailCommand)">
+            <summary>
+            Send mail.
+            </summary>
+            <param name="sendEmailCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.Email.EmailSMTPSettingController.AddEmailSMTPSetting(IsvecDiyanet.MediatR.Commands.AddEmailSMTPSettingCommand)">
+            <summary>
+            Create an Email SMTP Configuration.
+            </summary>
+            <param name="addEmailSMTPSettingCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.Email.EmailSMTPSettingController.GetEmailSMTPSetting(System.Guid)">
+            <summary>
+            Get Email SMTP Configuration.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.Email.EmailSMTPSettingController.GetEmailSMTPSettings">
+            <summary>
+            Get Email SMTP Configuration list.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.Email.EmailSMTPSettingController.UpdateEmailSMTPSetting(System.Guid,IsvecDiyanet.MediatR.Commands.UpdateEmailSMTPSettingCommand)">
+            <summary>
+            Update an Email SMTP Configuration.
+            </summary>
+            <param name="addEmailSMTPSettingCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.Email.EmailSMTPSettingController.DeleteEmailSMTPSetting(System.Guid)">
+            <summary>
+            Delete an Email SMTP Configuration.
+            </summary>
+            <param name="addEmailSMTPSettingCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.FamilyController.FuneralFundApplication(IsvecDiyanet.MediatR.Commands.AddUserModelCommand)">
+            <summary>
+            Funeral Fund Application
+            </summary>
+            <param name="userModelCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.FamilyController.AddNewFamilyMember(IsvecDiyanet.MediatR.Commands.AddNewFamilyMemberCommand)">
+            <summary>
+            Add New Family Member
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.FamilyController.ReportFamilyMemberDateOfDeath(System.Guid,System.DateTime,System.String,System.String)">
+            <summary>
+            Report Family Member Date of Death
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.FamilyController.ParentalDivorce(System.Guid)">
+            <summary>
+            Parental Divorce
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.FamilyController.CheckFamilyDebt(System.Guid)">
+            <summary>Check Family Debt</summary>
+            <return></return>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.FamilyController.GetFamiliesPagination(System.Int32,System.Int32,System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Int32,System.String,System.String)">
+            <summary>Get Families Pagination </summary>
+            <return></return>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:IsvecDiyanet.API.Controllers.FamilyController.GetFamilyDetailByFamilyID(System.Guid,System.Nullable{System.Int32},System.Nullable{System.Boolean},System.Nullable{System.Boolean})" -->
+        <member name="M:IsvecDiyanet.API.Controllers.FamilyController.GetMemberById(System.Guid)">
+            <summary>Get Member By ID</summary>
+            <return></return>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.FamilyController.GetFamilyByUserID(System.Guid)">
+            <summary>Get Family By User ID</summary>
+            <return></return>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.FamilyController.GetDeletedFamilies(System.Int32,System.Int32,System.String,System.String)">
+            <summary>Get Deleted Families</summary>
+            <return></return>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.FamilyController.GetDeletedMembers(System.Int32,System.Int32,System.String,System.String)">
+            <summary>Get Deleted All Family's Members</summary>
+            <return></return>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.FamilyController.GetAllDiedMembers(System.Int32,System.Int32,System.String,System.String)">
+            <summary>Get All Died Members</summary>
+            <return></return>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.FamilyController.TransferChildrenToAnotherFamily(System.Guid,System.Guid)">
+            <summary>
+            Transfer Children To Another Family
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.FamilyController.ChangeHeadOfTheFamily(System.Guid,System.Guid)">
+            <summary>
+            Change Head Of The Family
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.FamilyController.FamilyMemberDeathReport(System.Guid)">
+            <summary>
+            Family Member Death Report
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.FamilyController.UpdateFamilyMember(IsvecDiyanet.MediatR.Commands.UpdateFamilyMemberCommand)">
+            <summary>
+            Update Family Member
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.FamilyController.ChangeActivityStatus(System.Guid)">
+            <summary>
+            Change Family's Activity Status
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.FamilyController.UpdateFamilyAddress(IsvecDiyanet.MediatR.Commands.UpdateFamilyAddressCommand)">
+            <summary>
+            Update Family's Address
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.FamilyController.Delete(System.Guid)">
+            <summary>
+            Delete Family
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.FamilyController.DeleteMember(System.Guid)">
+            <summary>
+            Delete Family Member
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.FamilyController.ExportContract(System.Guid,System.String)">
+            <summary>
+            Get Debtor PDF
+            </summary>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.FamilyController.ExportMemberCard(System.Guid)">
+            <summary>
+            Get Member Card PDF
+            </summary>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.FoundationPublicationController.GetAll">
+            <summary>Get All Foundation Publications</summary><return></return>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.FoundationPublicationController.GetById(System.Int32)">
+            <summary>Get Foundation Publication By Id</summary><return></return>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.FoundationPublicationController.Add(IsvecDiyanet.MediatR.Commands.AddFoundationPublicationCommand)">
+            <summary>Add Foundation Publication</summary><return></return>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.FoundationPublicationController.Update(IsvecDiyanet.MediatR.Commands.UpdateFoundationPublicationCommand)">
+            <summary>Update Foundation Publication</summary><return></return>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.FoundationPublicationController.Delete(System.Int32)">
+            <summary>Delete Foundation Publication</summary><return></return>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.FrontAnnouncementController.Get(System.Guid)">
+            <summary>
+            Get By Id
+            </summary>
+            <param name="Code"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.FrontAnnouncementController.GetList(System.String)">
+            <summary>
+            Get All List
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.FrontAnnouncementController.Add(IsvecDiyanet.MediatR.Commands.AddFrontAnnouncementCommand)">
+            <summary>
+            Create Add FrontAnnouncement.
+            </summary>
+            <param name="addFrontAnnouncementCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.FrontAnnouncementController.Update(PT.MediatR.Commands.UpdateFrontAnnouncementCommand)">
+            <summary>
+            Update FrontAnnouncement.
+            </summary>
+            <param name="updateFrontAnnouncementCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.FrontAnnouncementController.Delete(System.Guid)">
+            <summary>
+            Delete
+            </summary>
+            <param name="Code"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.FrontAnnouncementController.UploadPhoto(PT.MediatR.Commands.UploadPhotoCommand)">
+            <summary>
+            Upload Announcemenet photo
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.FrontAnnouncementRecordController.Get(System.Int32)">
+            <summary>
+            Get By Id
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.FrontAnnouncementRecordController.GetList">
+            <summary>
+            Get All List
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.FrontAnnouncementRecordController.Add(IsvecDiyanet.MediatR.Commands.AddFrontAnnouncementRecordCommand)">
+            <summary>
+            Create Add FrontAnnouncementRecord.
+            </summary>
+            <param name="addFrontAnnouncementRecordCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.FrontAnnouncementRecordController.Update(PT.MediatR.Commands.UpdateFrontAnnouncementRecordCommand)">
+            <summary>
+            Update FrontAnnouncementRecord.
+            </summary>
+            <param name="updateFrontAnnouncementRecordCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.FrontAnnouncementRecordController.Delete(System.Int32)">
+            <summary>
+            Delete
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.FrontGalleryController.Get(System.Guid)">
+            <summary>
+            Get By Id
+            </summary>
+            <param name="Code"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.FrontGalleryController.GetList">
+            <summary>
+            Get All List
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.FrontGalleryController.Add(PT.MediatR.Commands.AddFrontGalleryCommand)">
+            <summary>
+            Create Add FrontGallery.
+            </summary>
+            <param name="addFrontGalleryCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.FrontGalleryController.Update(PT.MediatR.Commands.UpdateFrontGalleryCommand)">
+            <summary>
+            Update FrontGallery.
+            </summary>
+            <param name="updateFrontGalleryCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.FrontGalleryController.Delete(System.Guid)">
+            <summary>
+            Delete
+            </summary>
+            <param name="Code"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.FrontGalleryMediaController.Get(System.Int32)">
+            <summary>
+            Get By Id
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.FrontGalleryMediaController.GetList">
+            <summary>
+            Get All List
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.FrontGalleryMediaController.Add(PT.MediatR.Commands.AddFrontGalleryMediaCommand)">
+            <summary>
+            Create Add FrontGalleryMedia.
+            </summary>
+            <param name="addFrontGalleryMediaCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.FrontGalleryMediaController.Update(PT.MediatR.Commands.UpdateFrontGalleryMediaCommand)">
+            <summary>
+            Update FrontGalleryMedia.
+            </summary>
+            <param name="updateFrontGalleryMediaCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.FrontGalleryMediaController.Delete(System.Int32)">
+            <summary>
+            Delete
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.FrontGalleryRecordController.Get(System.Int32)">
+            <summary>
+            Get By Id
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.FrontGalleryRecordController.GetList">
+            <summary>
+            Get All List
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.FrontGalleryRecordController.Add(PT.MediatR.Commands.AddFrontGalleryRecordCommand)">
+            <summary>
+            Create Add FrontGalleryRecord.
+            </summary>
+            <param name="addFrontGalleryRecordCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.FrontGalleryRecordController.Update(PT.MediatR.Commands.UpdateFrontGalleryRecordCommand)">
+            <summary>
+            Update FrontGalleryRecord.
+            </summary>
+            <param name="updateFrontGalleryRecordCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.FrontGalleryRecordController.Delete(System.Int32)">
+            <summary>
+            Delete
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.FrontMenuController.Get(System.Guid)">
+            <summary>
+            Get By Id
+            </summary>
+            <param name="Code"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.FrontMenuController.GetList(System.String)">
+            <summary>
+            Get All List
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.FrontMenuController.Add(PT.MediatR.Commands.AddFrontMenuCommand)">
+            <summary>
+            Create Add FrontMenu.
+            </summary>
+            <param name="addFrontMenuCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.FrontMenuController.Update(PT.MediatR.Commands.UpdateFrontMenuCommand)">
+            <summary>
+            Update FrontMenu.
+            </summary>
+            <param name="updateFrontMenuCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.FrontMenuController.Delete(System.Guid)">
+            <summary>
+            Delete
+            </summary>
+            <param name="Code"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.FrontMenuRecordController.Get(System.Int32)">
+            <summary>
+            Get By Id
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.FrontMenuRecordController.GetList">
+            <summary>
+            Get All List
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.FrontMenuRecordController.Add(PT.MediatR.Commands.AddFrontMenuRecordCommand)">
+            <summary>
+            Create Add FrontMenuRecord.
+            </summary>
+            <param name="addFrontMenuRecordCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.FrontMenuRecordController.Update(PT.MediatR.Commands.UpdateFrontMenuRecordCommand)">
+            <summary>
+            Update FrontMenuRecord.
+            </summary>
+            <param name="updateFrontMenuRecordCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.FrontMenuRecordController.Delete(System.Int32)">
+            <summary>
+            Delete
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.FrontPageController.Get(System.Guid)">
+            <summary>
+            Get By Id
+            </summary>
+            <param name="Code"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.FrontPageController.GetList(System.String)">
+            <summary>
+            Get All List
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.FrontPageController.Add(PT.MediatR.Commands.AddFrontPageCommand)">
+            <summary>
+            Create Add FrontPage.
+            </summary>
+            <param name="addFrontPageCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.FrontPageController.Update(PT.MediatR.Commands.UpdateFrontPageCommand)">
+            <summary>
+            Update FrontPage.
+            </summary>
+            <param name="updateFrontPageCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.FrontPageController.Delete(System.Guid)">
+            <summary>
+            Delete
+            </summary>
+            <param name="Code"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.FrontPageRecordController.Get(System.Guid)">
+            <summary>
+            Get By Id
+            </summary>
+            <param name="Code"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.FrontPageRecordController.GetList">
+            <summary>
+            Get All List
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.FrontPageRecordController.Add(PT.MediatR.Commands.AddFrontPageRecordCommand)">
+            <summary>
+            Create Add FrontPageRecord.
+            </summary>
+            <param name="addFrontPageRecordCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.FrontPageRecordController.Update(PT.MediatR.Commands.UpdateFrontPageRecordCommand)">
+            <summary>
+            Update FrontPageRecord.
+            </summary>
+            <param name="updateFrontPageRecordCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.FrontPageRecordController.Delete(System.Guid)">
+            <summary>
+            Delete
+            </summary>
+            <param name="Code"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.Gender.GenderController.GetGenders">
+            <summary>Get Genders</summary><return></return>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.HacFormController.RegistrationForm(IsvecDiyanet.MediatR.Commands.AddHacFormCommand)">
+            <summary>Hajj registration form</summary>
+            <return></return>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.HacFormController.GetAllCandidates(System.Int32,System.Int32,System.String,System.Nullable{System.Int32})">
+            <summary>Get All Hajj Candidates</summary><return></return>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.HacFormController.GetCandidateById(System.Int32)">
+            <summary>Get Hajj Candidate By Id</summary>
+            <return></return>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.HacFormController.UpdateCandidateById(IsvecDiyanet.MediatR.Commands.UpdateHacFormCommand)">
+            <summary>Update Candidate By Id </summary>
+            <return></return>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.HacFormController.DeleteById(System.Int32)">
+            <summary>Delete Application By Id</summary><return></return>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.HacFormController.GetHACMemberCardPDF(System.Int32)">
+            <summary> Get Hac's Member Card PDF </summary><returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.LoginAudit.LoginAuditController.GetLoginAudit(IsvecDiyanet.Data.Resources.LoginAuditResource)">
+            <summary>
+            Get All Login Audit detail
+            </summary>
+            <param name="loginAuditResource"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.MemberType.MemberTypeController.GetAll">
+            <summary>Get All Member Types</summary><return></return>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.MemberType.MemberTypeController.GetById(System.Int32)">
+            <summary>Get Member Type By Id</summary><return></return>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.MemberType.MemberTypeController.Add(IsvecDiyanet.MediatR.Commands.AddMemberTypeCommand)">
+            <summary>Add New Member Type</summary><return></return>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.MemberType.MemberTypeController.Update(IsvecDiyanet.MediatR.Commands.UpdateMemberTypeCommand)">
+            <summary>Update Member Type</summary><return></return>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.MemberType.MemberTypeController.Delete(System.Int32)">
+            <summary>Delete Member Type</summary>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.MosqueController.GetAll">
+            <summary>Get All Mosques</summary><return></return>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.MosqueController.GetById(System.Int32)">
+            <summary>Get Mosque By Id</summary><return></return>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.MosqueController.Add(IsvecDiyanet.MediatR.Commands.AddMosqueCommand)">
+            <summary>Add Mosque</summary><return></return>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.MosqueController.Update(IsvecDiyanet.MediatR.Commands.UpdateMosqueCommand)">
+            <summary>Update Mosque</summary><return></return>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.MosqueController.Delete(System.Int32)">
+            <summary>Delete Mosque</summary><return></return>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.NewsController.GetAll">
+            <summary>Get All News</summary><return></return>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.NewsController.GetById(System.Int32)">
+            <summary>Get News By Id</summary><return></return>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.NewsController.Add(IsvecDiyanet.MediatR.Commands.AddNewsCommand)">
+            <summary>Add News</summary><return></return>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.NewsController.Update(IsvecDiyanet.MediatR.Commands.UpdateNewsCommand)">
+            <summary>Update News</summary><return></return>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.NewsController.Delete(System.Int32)">
+            <summary>Delete News</summary><return></return>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.NLogController.GetNLogs(IsvecDiyanet.Data.Resources.NLogResource)">
+            <summary>
+            Get System Logs
+            </summary>
+            <param name="nLogResource"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.NLogController.GetNLog(System.Guid)">
+            <summary>
+            Get Log By Id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.NLogController.CreatNLog(IsvecDiyanet.MediatR.Commands.AddLogCommand)">
+            <summary>
+            Create Log.
+            </summary>
+            <param name="addLogCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.NoteController.GetAllFamilyNotes">
+            <summary> Get All Family Notes </summary><returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.NoteController.GetByIdF(System.Int32)">
+            <summary> Get Family Note By ID</summary><returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.NoteController.GetByFamilyId(System.Guid)">
+            <summary> Get Families Notes By Family ID</summary><returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.NoteController.GetAll">
+            <summary> Get All Notes </summary><returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.NoteController.GetById(System.Int32)">
+            <summary> Get Note By ID</summary><returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.NoteController.GetByMinAndMaxAge(System.Guid)">
+            <summary> Get User's Notes By User ID</summary><returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.NoteController.Add(IsvecDiyanet.MediatR.Commands.AddNoteCommand)">
+            <summary> Add Note </summary><returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.NoteController.Update(IsvecDiyanet.MediatR.Commands.UpdateNoteCommand)">
+            <summary> Update Note </summary><returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.NoteController.Delete(System.Int32)">
+            <summary> Delete Note </summary><returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.NoteController.AddFamilyNote(IsvecDiyanet.MediatR.Commands.AddFamilyNoteCommand)">
+            <summary> Add Family Note </summary><returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.NoteController.UpdateFamilyNote(IsvecDiyanet.MediatR.Commands.UpdateFamilyNoteCommand)">
+            <summary> Update Family Note </summary><returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.NoteController.Family(System.Int32)">
+            <summary> Delete Family Note </summary><returns></returns>
+        </member>
+        <member name="T:IsvecDiyanet.API.Controllers.PageActionController">
+            <summary>
+            Page Action
+            </summary>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.PageActionController.#ctor(MediatR.IMediator)">
+            <summary>
+            Page Action
+            </summary>
+            <param name="mediator"></param>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.PageActionController.GetPageActions">
+            <summary>
+            Get All Page Actions
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.PageActionController.AddPageAction(IsvecDiyanet.MediatR.Commands.AddPageActionCommand)">
+            <summary>
+            Add Page Action
+            </summary>
+            <param name="addPageActionCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.PageActionController.DeletePageAction(System.Guid)">
+            <summary>
+            Delete Page Action By Id
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:IsvecDiyanet.API.Controllers.PageController">
+            <summary>
+            Page
+            </summary>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.PageController.#ctor(MediatR.IMediator)">
+            <summary>
+            Page
+            </summary>
+            <param name="mediator"></param>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.PageController.GetPage(System.Guid)">
+            <summary>
+            Get Page By Id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.PageController.GetPages">
+            <summary>
+            Get All Pages
+            </summary>
+            <returns>Test</returns>
+            <response code="200">Returns the newly created item</response>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.PageController.AddPage(IsvecDiyanet.MediatR.Commands.AddPageCommand)">
+            <summary>
+            Create a Page
+            </summary>
+            <param name="addPageCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.PageController.UpdatePage(System.Guid,IsvecDiyanet.MediatR.Commands.UpdatePageCommand)">
+            <summary>
+            Update Page By Id
+            </summary>
+            <param name="Id"></param>
+            <param name="updatePageCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.PageController.DeletePage(System.Guid)">
+            <summary>
+            Delete Page By Id
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.PeriodController.Add(IsvecDiyanet.MediatR.Commands.AddHacPeriodCommand)">
+            <summary>
+            Add Hac Period
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.PeriodController.Add(IsvecDiyanet.MediatR.Commands.AddUmrePeriodCommand)">
+            <summary>
+            Add Umre Period
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.PeriodController.Update(IsvecDiyanet.MediatR.Commands.UpdateHacPeriodCommand)">
+            <summary>
+            Update Hac Period
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.PeriodController.Update(IsvecDiyanet.MediatR.Commands.UpdateUmrePeriodCommand)">
+            <summary>
+            Update Umre Period
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.PeriodController.GetListHP">
+            <summary>
+            Get List Hac Periods
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.PeriodController.GetListUP">
+            <summary>
+            Get List Umre Periods
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:IsvecDiyanet.API.Controllers.RoleController">
+            <summary>
+            Role
+            </summary>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.RoleController.#ctor(MediatR.IMediator)">
+            <summary>
+            Role
+            </summary>
+            <param name="mediator"></param>
+            <param name="logger"></param>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.RoleController.AddRole(IsvecDiyanet.MediatR.Commands.AddRoleCommand)">
+            <summary>
+            Create A Role
+            </summary>
+            <param name="addRoleCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.RoleController.UpdateRole(System.Guid,IsvecDiyanet.MediatR.Commands.UpdateRoleCommand)">
+            <summary>
+            Update Exist Role By Id
+            </summary>
+            <param name="id"></param>
+            <param name="updateRoleCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.RoleController.GetRole(System.Guid)">
+            <summary>
+            Get Role By Id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.RoleController.GetRoles">
+            <summary>
+            Get All Roles
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.RoleController.DeleteRole(System.Guid)">
+            <summary>
+            Delete Role By Id
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:IsvecDiyanet.API.Controllers.RoleUsersController">
+            <summary>
+            RoleUsers
+            </summary>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.RoleUsersController.#ctor(MediatR.IMediator)">
+            <summary>
+            RoleUsers
+            </summary>
+            <param name="mediator"></param>
+            <param name="logger"></param>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.RoleUsersController.RoleUsers(System.Guid)">
+            <summary>
+            Get Role Users By Id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.RoleUsersController.UpdateRoleUsers(System.Guid,IsvecDiyanet.MediatR.Commands.UpdateUserRoleCommand)">
+            <summary>
+            Update Role Users By Id
+            </summary>
+            <param name="id"></param>
+            <param name="updateRoleCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.RoomTypeController.GetAllRoomTypes">
+            <summary>Get All Room Types</summary><return></return>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.RoomTypeController.GetById(System.Int32)">
+            <summary>Get Room Type By Id</summary><return></return>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.RoomTypeController.Add(IsvecDiyanet.MediatR.Commands.AddRoomTypeCommand)">
+            <summary>Add New Room Type</summary><return></return>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.RoomTypeController.Update(IsvecDiyanet.MediatR.Commands.UpdateRoomTypeCommand)">
+            <summary>Update Room Type</summary><return></return>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.RoomTypeController.Delete(System.Int32)">
+            <summary>Delete Room Type</summary>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.ServiceController.GetList">
+            <summary>Get All Services</summary><return></return>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.ServiceController.GetById(System.Int32)">
+            <summary>Get Service By Id</summary><return></return>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.ServiceController.Create(IsvecDiyanet.MediatR.Commands.AddServicesCommand)">
+            <summary>Create Service</summary><return></return>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.ServiceController.Update(IsvecDiyanet.MediatR.Commands.UpdateServicesCommand)">
+            <summary>Update Service</summary><return></return>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.ServiceController.Update(System.Int32)">
+            <summary>Delete Service</summary><return></return>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.UmreFormController.RegistrationForm(IsvecDiyanet.MediatR.Commands.AddUmreFormCommand)">
+            <summary>Umrah registration form</summary>
+            <return></return>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.UmreFormController.GetUmrahCandidateById(System.Int32)">
+            <summary>Get Umrah Candidate By Id</summary>
+            <return></return>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.UmreFormController.GetAllCandidates(System.Int32,System.Int32,System.String,System.Nullable{System.Int32})">
+            <summary>Get All Umrah Candidates</summary><return></return>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.UmreFormController.UpdateUmrahCandidateById(IsvecDiyanet.MediatR.Commands.UpdateUmreFormCommand)">
+            <summary>Update Candidate By Id </summary>
+            <return></return>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.UmreFormController.DeleteById(System.Int32)">
+            <summary>Delete Application By Id</summary><return></return>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.UmreFormController.GetUmrahMemberCardPDF(System.Int32)">
+            <summary> Get Umrah's Member Card PDF </summary><returns></returns>
+        </member>
+        <member name="T:IsvecDiyanet.API.Controllers.UserClaimController">
+            <summary>
+            UserClaim
+            </summary>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.UserClaimController.#ctor(MediatR.IMediator)">
+            <summary>
+            UserClaim
+            </summary>
+            <param name="mediator"></param>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.UserClaimController.UpdateUserClaim(System.Guid,IsvecDiyanet.MediatR.Commands.UpdateUserClaimCommand)">
+            <summary>
+            Update User Claim By Id
+            </summary>
+            <param name="id"></param>
+            <param name="addUserCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="T:IsvecDiyanet.API.Controllers.UserController">
+            <summary>
+            User
+            </summary>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.UserController.#ctor(MediatR.IMediator,IsvecDiyanet.Data.Dto.UserInfoToken,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
+            <summary>
+            User
+            </summary>
+            <param name="mediator"></param>
+            <param name="userInfo"></param>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.UserController.GetUsersDetail">
+            <summary>Get All Users Detail </summary>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.UserController.GetUserDetailByUserId(System.Guid)">
+            <summary>Get User Detail By Id</summary>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.UserController.AddUser(IsvecDiyanet.MediatR.Commands.AddUserCommand)">
+            <summary>
+             Create a User
+            </summary>
+            <param name="addUserCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.UserController.UpdateUserContactInformation(IsvecDiyanet.MediatR.Commands.UpdateUserInformationCommand)">
+            <summary>
+            Update User Contact Information
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.UserController.UpdateAllUsersPassword(IsvecDiyanet.MediatR.Commands.User.ResetAllUsersPasswordCommand)">
+            <summary>
+            Update All User's Password
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.UserController.GetAllUsers">
+            <summary>
+            Get All Users
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.UserController.GetUser(System.Guid)">
+            <summary>
+            Get User By Id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.UserController.GetUsers(IsvecDiyanet.Data.Resources.UserResource)">
+            <summary>
+            Get Users
+            </summary>
+            <param name="userResource"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.UserController.GetRecentlyRegisteredUsers">
+            <summary>
+            Get Recently Registered Users
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.UserController.UserLogin(IsvecDiyanet.MediatR.Commands.UserLoginCommand)">
+            <summary>
+            User Login
+            </summary>
+            <param name="userLoginCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.UserController.UpdateUser(System.Guid,IsvecDiyanet.MediatR.Commands.UpdateUserCommand)">
+            <summary>
+            Update User By Id
+            </summary>
+            <param name="id"></param>
+            <param name="updateUserCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.UserController.UpdateUserProfile(IsvecDiyanet.MediatR.Commands.UpdateUserProfileCommand)">
+            <summary>
+            Update Profile
+            </summary>
+            <param name="id"></param>
+            <param name="updateUserProfileCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.UserController.UpdateUserProfilePhoto">
+            <summary>
+            Update Profile photo
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.UserController.DeleteUser(System.Guid)">
+            <summary>
+            Delete User By Id
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.UserController.ChangePassword(IsvecDiyanet.MediatR.Commands.ChangePasswordCommand)">
+            <summary>
+            User Change Password
+            </summary>
+            <param name="resetPasswordCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.UserController.ResetPassword(IsvecDiyanet.MediatR.Commands.ResetPasswordCommand)">
+            <summary>
+            Reset Resetpassword
+            </summary>
+            <param name="newPasswordCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IsvecDiyanet.API.Controllers.UserController.GetProfile">
+            <summary>
+            Get User Profile
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

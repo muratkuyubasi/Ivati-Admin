@@ -1,0 +1,1550 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CenazeFonu.API</name>
+    </assembly>
+    <members>
+        <member name="T:CenazeFonu.API.Controllers.ActionController">
+            <summary>
+            Action
+            </summary>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.ActionController.#ctor(MediatR.IMediator)">
+            <summary>
+            Action
+            </summary>
+            <param name="mediator"></param>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.ActionController.GetAction(System.Guid)">
+            <summary>
+            Get Action By Id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.ActionController.GetActions">
+            <summary>
+            Get All Actions
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.ActionController.AddAction(CenazeFonu.MediatR.Commands.AddActionCommand)">
+            <summary>
+            Create A Action
+            </summary>
+            <param name="addActionCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.ActionController.UpdateAction(System.Guid,CenazeFonu.MediatR.Commands.UpdateActionCommand)">
+            <summary>
+            Update Exist Action By Id
+            </summary>
+            <param name="Id"></param>
+            <param name="updateActionCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.ActionController.DeleteAction(System.Guid)">
+            <summary>
+            Delete Action By Id
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.Activity.ActivityController.GetAllActivities">
+            <summary>Get All Activities</summary><return></return>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.Activity.ActivityController.GetById(System.Int32)">
+            <summary>Get Activity By Id</summary><return></return>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.Activity.ActivityController.Create(CenazeFonu.MediatR.Commands.AddActivityCommand)">
+            <summary>Create Activity</summary><return></return>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.Activity.ActivityController.Update(CenazeFonu.MediatR.Commands.UpdateActivityCommand)">
+            <summary>Update Activity</summary><return></return>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.Activity.ActivityController.Delete(System.Int32)">
+            <summary>Delete Activity</summary><return></return>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.Age.AgeController.GetAll">
+            <summary> Get All Age Ranges </summary><returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.Age.AgeController.GetAgeByDate(System.DateTime)">
+            <summary> Get Age By Date </summary><returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.Age.AgeController.GetById(System.Int32)">
+            <summary> Get Age Range By Id</summary><returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.Age.AgeController.GetByMinAndMaxAge(System.Int32,System.Int32)">
+            <summary> Get Amount By Min Age between Max Age</summary><returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.Age.AgeController.Add(CenazeFonu.MediatR.Commands.AddAgeCommand)">
+            <summary> Add New Age Range </summary><returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.Age.AgeController.Change(System.Decimal)">
+            <summary> Change Annual Dues</summary><returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.Age.AgeController.Update(CenazeFonu.MediatR.Commands.UpdateAgeCommand)">
+            <summary> Update Age Range </summary><returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.Age.AgeController.Delete(System.Int32)">
+            <summary> Delete Age Range </summary><returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.Airport.AirportController.GetAllAirports">
+            <summary>Get All Airports</summary><return></return>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.Airport.AirportController.GetById(System.Int32)">
+            <summary>Get Airport By Id</summary><return></return>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.Airport.AirportController.Add(CenazeFonu.MediatR.Commands.AddAirportCommand)">
+            <summary>Add New Airport</summary><return></return>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.Airport.AirportController.Update(CenazeFonu.MediatR.Commands.UpdateAirportCommand)">
+            <summary>Update Airport</summary><return></return>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.Airport.AirportController.Delete(System.Int32)">
+            <summary>Delete Airport</summary>
+        </member>
+        <member name="T:CenazeFonu.API.Controllers.AppSetting.AppSettingController">
+            <summary>
+            App Setting
+            </summary>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.AppSetting.AppSettingController.#ctor(MediatR.IMediator,Microsoft.Extensions.Logging.ILogger{CenazeFonu.API.Controllers.AppSetting.AppSettingController})">
+            <summary>
+            App Setting
+            </summary>
+            <param name="mediator"></param>
+            <param name="logger"></param>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.AppSetting.AppSettingController.AddAppSetting(CenazeFonu.MediatR.Commands.AddAppSettingCommand)">
+            <summary>
+            Create  Appsetting
+            </summary>
+            <param name="addAppSettingCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.AppSetting.AppSettingController.UpdateAppSetting(System.Guid,CenazeFonu.MediatR.Commands.UpdateAppSettingCommand)">
+            <summary>
+            Update Exist AppSetting By Id
+            </summary>
+            <param name="id"></param>
+            <param name="updateAppSettingCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.AppSetting.AppSettingController.GetAppSetting(System.Guid)">
+            <summary>
+            Get AppSetting By Id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.AppSetting.AppSettingController.GetAppSettingByKey(System.String)">
+            <summary>
+            Get AppSetting By Key
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.AppSetting.AppSettingController.GetAppSettingJustByKey(System.String)">
+            <summary>
+            Get AppSetting By Key
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.AppSetting.AppSettingController.GetAppSettings">
+            <summary>
+            Get All AppSettings
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.AppSetting.AppSettingController.DeleteAppSetting(System.Guid)">
+            <summary>
+            Delete AppSetting By Id
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.AssociationController.GetAllAssociations">
+            <summary>Get All Associations</summary>
+            <return></return>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.AssociationController.GetById(System.Int32)">
+            <summary>Get Association By Id</summary><return></return>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.AssociationController.Add(CenazeFonu.MediatR.Commands.AddAssociationCommand)">
+            <summary>Add New Association</summary><return></return>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.AssociationController.Update(CenazeFonu.MediatR.Commands.UpdateAssociationCommand)">
+            <summary>Update Association</summary><return></return>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.AssociationController.Delete(System.Int32)">
+            <summary>Delete Association</summary>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.AtaseController.GetAll">
+            <summary>Get All Atases</summary><return></return>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.AtaseController.GetById(System.Int32)">
+            <summary>Get Atase By Id</summary><return></return>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.AtaseController.Add(CenazeFonu.MediatR.Commands.AddAtaseCommand)">
+            <summary>Add Atase</summary><return></return>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.AtaseController.Update(CenazeFonu.MediatR.Commands.UpdateAtaseCommand)">
+            <summary>Update Atase</summary><return></return>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.AtaseController.Delete(System.Int32)">
+            <summary>Delete Atase</summary><return></return>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.ChairmanController.GetAll">
+            <summary>Get All Chairmen</summary><return></return>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.ChairmanController.GetById(System.Int32)">
+            <summary>Get Chairman By Id</summary><return></return>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.ChairmanController.Add(CenazeFonu.MediatR.Commands.AddChairmanCommand)">
+            <summary>Add Chairman</summary><return></return>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.ChairmanController.Update(CenazeFonu.MediatR.Commands.UpdateChairmanCommand)">
+            <summary>Update Chairman</summary><return></return>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.ChairmanController.Delete(System.Int32)">
+            <summary>Delete Chairman</summary><return></return>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.City.CityController.GetAllAirports">
+            <summary>Get All Cities</summary><return></return>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.City.CityController.GetAllDefaultCities">
+            <summary>Get All Default Cities</summary><return></return>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.City.CityController.GetById(System.Int32)">
+            <summary>Get City By Id</summary><return></return>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.City.CityController.Add(CenazeFonu.MediatR.Commands.AddCityCommand)">
+            <summary>Add New City</summary><return></return>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.City.CityController.Update(CenazeFonu.MediatR.Commands.UpdateCityCommand)">
+            <summary>Update City</summary><return></return>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.City.CityController.Delete(System.Int32)">
+            <summary>Delete Airport</summary>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.ClergyController.GetAll">
+            <summary>Get All Clergies</summary><return></return>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.ClergyController.GetById(System.Int32)">
+            <summary>Get Clergy By Id</summary><return></return>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.ClergyController.Add(CenazeFonu.MediatR.Commands.AddClergyCommand)">
+            <summary>Add Clergy</summary><return></return>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.ClergyController.Update(CenazeFonu.MediatR.Commands.UpdateClergyCommand)">
+            <summary>Update Clergy</summary><return></return>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.ClergyController.Delete(System.Int32)">
+            <summary>Delete Clergy</summary><return></return>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.Country.CountryController.GetAllAirports">
+            <summary>Get All Countries</summary><return></return>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.Country.CountryController.GetById(System.Int32)">
+            <summary>Get Country By Id</summary><return></return>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.Country.CountryController.GetByLangcode(System.String)">
+            <summary>Get Country By Langcode</summary><return></return>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.Country.CountryController.Add(CenazeFonu.MediatR.Commands.AddCountryCommand)">
+            <summary>Add New Country</summary><return></return>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.Country.CountryController.Update(CenazeFonu.MediatR.Commands.UpdateCountryCommand)">
+            <summary>Update Country</summary><return></return>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.Country.CountryController.Delete(System.Int32)">
+            <summary>Delete Airport</summary>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.Dashboard.DashboardController.GetActiveUserCount">
+            <summary>
+            Get Active User Count
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.Dashboard.DashboardController.GetInactiveUserCount">
+            <summary>
+            Get Inactive User Count
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.Dashboard.DashboardController.GetTotalDeletedUserCount">
+            <summary>
+            Get Total Deleted User Count
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.Dashboard.DashboardController.GetTotalUserCount">
+            <summary>
+            Get Total user count
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.Dashboard.DashboardController.GetDiedMembersCountByYear">
+            <summary>
+            Get Died Members Count By Year
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.Dashboard.DashboardController.GetOnlineUsers">
+            <summary>
+            Gets the online users.
+            </summary>
+            <param name="userIds">The user ids.</param>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.Dashboard.DashboardController.GetHacPilgrimCountByAssociation">
+            <summary>
+            Get Hac Pilgrim Count By Association
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.Dashboard.DashboardController.GetHacMenAndWomenCount">
+            <summary>
+            Get Hac Men And Women Count 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.Dashboard.DashboardController.GetHacPilgrimCountByDepartureAirport">
+            <summary>
+            Get Hac Pilgrim Count By Departure Airport
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.Dashboard.DashboardController.GetHacPilgrimCountByLandingAirport">
+            <summary>
+            Get Hac Pilgrim Count By Landing Airport
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.Dashboard.DashboardController.GetUmrePilgrimCountByAssociation">
+            <summary>
+            Get Umre Pilgrim Count By Association
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.Dashboard.DashboardController.GetUmreMenAndWomenCount">
+            <summary>
+            Get Umre Men And Women Count 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.Dashboard.DashboardController.GetUmrePilgrimCountByDepartureAirport">
+            <summary>
+            Get Umre Pilgrim Count By Departure Airport
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.Dashboard.DashboardController.GetUmrePilgrimCountByLandingAirport">
+            <summary>
+            Get Umre Pilgrim Count By Landing Airport
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.Dashboard.DashboardController.GetUnpaidDebtorsCount">
+            <summary>
+            Get Unpaid Debtors Count
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.Dashboard.DashboardController.GetPaidDebtorsCount">
+            <summary>
+            Get Paid Debtors Count
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.Dashboard.DashboardController.GetDebtorsIncomeByYear">
+            <summary>
+            Get Debtors Income By Year
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.DebtorTypeController.GetAllDebtorTypes">
+            <summary>Get All Debtor Types</summary><return></return>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.DebtorTypeController.GetById(System.Int32)">
+            <summary>Get Debtor Type By Id</summary><return></return>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.DebtorTypeController.Add(CenazeFonu.MediatR.Commands.AddDebtorTypeCommand)">
+            <summary>Add New Debtor Type</summary><return></return>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.DebtorTypeController.Update(CenazeFonu.MediatR.Commands.UpdateDebtorTypeCommand)">
+            <summary>Update Debtor Type</summary><return></return>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.DebtorTypeController.Delete(System.Int32)">
+            <summary>Delete Debtor Type</summary>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.Debtor.DebtorController.Add(CenazeFonu.MediatR.Commands.AddDebtorCommand)">
+            <summary>Add Debtor</summary><return></return>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.Debtor.DebtorController.GetIncomeByCity(System.Int32)">
+            <summary>Get Income By City ID </summary><returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.Debtor.DebtorController.FamilyDebtPayment(System.Guid,System.String)">
+            <summary> Family Debt Payment</summary>
+             <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.Debtor.DebtorController.UpdateDebtorInformation(CenazeFonu.MediatR.Commands.UpdateDebtorsCommand)">
+            <summary> Update Debtor Information </summary>
+             <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.Debtor.DebtorController.SetPenaltyFee">
+            <summary>
+            Set 150 Kron For Penalty Fee
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.Debtor.DebtorController.DeleteDebtorById(System.Guid,System.String)">
+            <summary>
+            Delete Debtor 
+            </summary>
+            <param name="familyId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.Debtor.DebtorController.GetIncomeByYear(System.String)">
+            <summary>
+            Get Income By Year
+            </summary>
+            <param name="year"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.Debtor.DebtorController.GetDebtorByYear">
+            <summary>
+            Get Debtor By Year
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.Debtor.DebtorController.YillikFaturaBas(System.String)">
+            <summary>
+            Yillik Fatura Bas
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.Debtor.DebtorController.SaveDebtorsToFolder(System.Boolean,System.Int32)">
+            <summary>
+            Save Debtors to Folder
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.Debtor.DebtorController.CheckDebtorFile(System.Int32)">
+            <summary> Check Debtor PDF File </summary> <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.EmailTemplate.EmailTemplateController.#ctor(MediatR.IMediator,Microsoft.Extensions.Logging.ILogger{CenazeFonu.API.Controllers.EmailTemplate.EmailTemplateController})">
+            <summary>
+            Role
+            </summary>
+            <param name="mediator"></param>
+            <param name="logger"></param>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.EmailTemplate.EmailTemplateController.AddEmailTemplate(CenazeFonu.MediatR.Commands.AddEmailTemplateCommand)">
+            <summary>
+            Create  Email Template
+            </summary>
+            <param name="addEmailTemplateCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.EmailTemplate.EmailTemplateController.UpdateAppSetting(System.Guid,CenazeFonu.MediatR.Commands.UpdateEmailTemplateCommand)">
+            <summary>
+            Update Exist AppSetting By Id
+            </summary>
+            <param name="id"></param>
+            <param name="updateEmailTemplateCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.EmailTemplate.EmailTemplateController.GetEmailTemplate(System.Guid)">
+            <summary>
+            Get Email Template By Id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.EmailTemplate.EmailTemplateController.GetEmailTemplates">
+            <summary>
+            Get All Email Templates
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.EmailTemplate.EmailTemplateController.DelterEmailTemplate(System.Guid)">
+            <summary>
+            Delete Email Template By Id
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.Email.EmailController.SendEmail(CenazeFonu.MediatR.Commands.SendEmailCommand)">
+            <summary>
+            Send mail.
+            </summary>
+            <param name="sendEmailCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.Email.EmailSMTPSettingController.AddEmailSMTPSetting(CenazeFonu.MediatR.Commands.AddEmailSMTPSettingCommand)">
+            <summary>
+            Create an Email SMTP Configuration.
+            </summary>
+            <param name="addEmailSMTPSettingCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.Email.EmailSMTPSettingController.GetEmailSMTPSetting(System.Guid)">
+            <summary>
+            Get Email SMTP Configuration.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.Email.EmailSMTPSettingController.GetEmailSMTPSettings">
+            <summary>
+            Get Email SMTP Configuration list.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.Email.EmailSMTPSettingController.UpdateEmailSMTPSetting(System.Guid,CenazeFonu.MediatR.Commands.UpdateEmailSMTPSettingCommand)">
+            <summary>
+            Update an Email SMTP Configuration.
+            </summary>
+            <param name="addEmailSMTPSettingCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.Email.EmailSMTPSettingController.DeleteEmailSMTPSetting(System.Guid)">
+            <summary>
+            Delete an Email SMTP Configuration.
+            </summary>
+            <param name="addEmailSMTPSettingCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.Executive.ExecutiveController.GetExecutivesPagination(System.Int32,System.Int32,System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Int32,System.String,System.String)">
+            <summary>Get Executives Pagination </summary>
+            <return></return>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.Executive.ExecutiveController.GetById(System.Guid)">
+            <summary>Get Executive By ID</summary><returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.Executive.ExecutiveController.GetExecutiveByUserID(System.Guid)">
+            <summary>Get Executive By User ID</summary><returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.Executive.ExecutiveController.AddExecutive(CenazeFonu.MediatR.Commands.AddExecutiveCommand)">
+            <summary>Add Executive</summary><returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.Executive.ExecutiveController.UpdateExecutive(CenazeFonu.MediatR.Commands.UpdateExecutiveCommand)">
+            <summary>Update Executive</summary><returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.Executive.ExecutiveController.DeleteExecutive(System.Guid)">
+            <summary>Delete Executive By ID</summary><returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.FamilyController.FuneralFundApplication(CenazeFonu.MediatR.Commands.AddUserModelCommand)">
+            <summary>
+            Funeral Fund Application
+            </summary>
+            <param name="userModelCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.FamilyController.AddNewFamilyMember(CenazeFonu.MediatR.Commands.AddNewFamilyMemberCommand)">
+            <summary>
+            Add New Family Member
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.FamilyController.ReportFamilyMemberDateOfDeath(System.Guid,System.DateTime,System.String,System.String)">
+            <summary>
+            Report Family Member Date of Death
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.FamilyController.ParentalDivorce(System.Guid)">
+            <summary>
+            Parental Divorce
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.FamilyController.CheckFamilyDebt(System.Guid)">
+            <summary>Check Family Debt</summary>
+            <return></return>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.FamilyController.GetFamiliesPagination(System.Int32,System.Int32,System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Int32,System.String,System.String)">
+            <summary>Get Families Pagination </summary>
+            <return></return>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.FamilyController.GetFamilyMembersPagination(System.Int32,System.Int32,System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.String,System.String,System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Int32,System.Nullable{System.Boolean})">
+            <summary>Get Family Members Pagination </summary>
+            <return></return>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:CenazeFonu.API.Controllers.FamilyController.GetFamilyDetailByFamilyID(System.Guid,System.Nullable{System.Int32},System.Nullable{System.Boolean},System.Nullable{System.Boolean})" -->
+        <member name="M:CenazeFonu.API.Controllers.FamilyController.GetMemberById(System.Guid)">
+            <summary>Get Member By ID</summary>
+            <return></return>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.FamilyController.GetFamilyByUserID(System.Guid)">
+            <summary>Get Family By User ID</summary>
+            <return></return>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.FamilyController.GetDeletedFamilies(System.Int32,System.Int32,System.String,System.String)">
+            <summary>Get Deleted Families</summary>
+            <return></return>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.FamilyController.GetDeletedMembers(System.Int32,System.Int32,System.String,System.String)">
+            <summary>Get Deleted All Family's Members</summary>
+            <return></return>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.FamilyController.GetAllDiedMembers(System.Int32,System.Int32,System.String,System.String)">
+            <summary>Get All Died Members</summary>
+            <return></return>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.FamilyController.TransferChildrenToAnotherFamily(System.Guid,System.Guid)">
+            <summary>
+            Transfer Children To Another Family
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.FamilyController.ChangeHeadOfTheFamily(System.Guid,System.Guid)">
+            <summary>
+            Change Head Of The Family
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.FamilyController.FamilyMemberDeathReport(System.Guid)">
+            <summary>
+            Family Member Death Report
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.FamilyController.UpdateFamilyMember(CenazeFonu.MediatR.Commands.UpdateFamilyMemberCommand)">
+            <summary>
+            Update Family Member
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.FamilyController.ChangeActivityStatus(System.Guid)">
+            <summary>
+            Change Family's Activity Status
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.FamilyController.UpdateFamilyAddress(CenazeFonu.MediatR.Commands.UpdateFamilyAddressCommand)">
+            <summary>
+            Update Family's Address
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.FamilyController.Delete(System.Guid)">
+            <summary>
+            Delete Family
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.FamilyController.DeleteMember(System.Guid)">
+            <summary>
+            Delete Family Member
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.FamilyController.ExportContract(System.Guid,System.String)">
+            <summary>
+            Get Debtor PDF
+            </summary>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.FamilyController.ExportMemberCard(System.Guid)">
+            <summary>
+            Get Member Card PDF
+            </summary>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.FoundationPublicationController.GetAll">
+            <summary>Get All Foundation Publications</summary><return></return>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.FoundationPublicationController.GetById(System.Int32)">
+            <summary>Get Foundation Publication By Id</summary><return></return>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.FoundationPublicationController.Add(CenazeFonu.MediatR.Commands.AddFoundationPublicationCommand)">
+            <summary>Add Foundation Publication</summary><return></return>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.FoundationPublicationController.Update(CenazeFonu.MediatR.Commands.UpdateFoundationPublicationCommand)">
+            <summary>Update Foundation Publication</summary><return></return>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.FoundationPublicationController.Delete(System.Int32)">
+            <summary>Delete Foundation Publication</summary><return></return>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.FrontAnnouncementController.Get(System.Guid)">
+            <summary>
+            Get By Id
+            </summary>
+            <param name="Code"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.FrontAnnouncementController.GetList(System.String)">
+            <summary>
+            Get All List
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.FrontAnnouncementController.Add(CenazeFonu.MediatR.Commands.AddFrontAnnouncementCommand)">
+            <summary>
+            Create Add FrontAnnouncement.
+            </summary>
+            <param name="addFrontAnnouncementCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.FrontAnnouncementController.Update(PT.MediatR.Commands.UpdateFrontAnnouncementCommand)">
+            <summary>
+            Update FrontAnnouncement.
+            </summary>
+            <param name="updateFrontAnnouncementCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.FrontAnnouncementController.Delete(System.Guid)">
+            <summary>
+            Delete
+            </summary>
+            <param name="Code"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.FrontAnnouncementController.UploadPhoto(PT.MediatR.Commands.UploadPhotoCommand)">
+            <summary>
+            Upload Announcemenet photo
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.FrontAnnouncementRecordController.Get(System.Int32)">
+            <summary>
+            Get By Id
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.FrontAnnouncementRecordController.GetList">
+            <summary>
+            Get All List
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.FrontAnnouncementRecordController.Add(CenazeFonu.MediatR.Commands.AddFrontAnnouncementRecordCommand)">
+            <summary>
+            Create Add FrontAnnouncementRecord.
+            </summary>
+            <param name="addFrontAnnouncementRecordCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.FrontAnnouncementRecordController.Update(PT.MediatR.Commands.UpdateFrontAnnouncementRecordCommand)">
+            <summary>
+            Update FrontAnnouncementRecord.
+            </summary>
+            <param name="updateFrontAnnouncementRecordCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.FrontAnnouncementRecordController.Delete(System.Int32)">
+            <summary>
+            Delete
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.FrontGalleryController.Get(System.Guid)">
+            <summary>
+            Get By Id
+            </summary>
+            <param name="Code"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.FrontGalleryController.GetList">
+            <summary>
+            Get All List
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.FrontGalleryController.Add(PT.MediatR.Commands.AddFrontGalleryCommand)">
+            <summary>
+            Create Add FrontGallery.
+            </summary>
+            <param name="addFrontGalleryCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.FrontGalleryController.Update(PT.MediatR.Commands.UpdateFrontGalleryCommand)">
+            <summary>
+            Update FrontGallery.
+            </summary>
+            <param name="updateFrontGalleryCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.FrontGalleryController.Delete(System.Guid)">
+            <summary>
+            Delete
+            </summary>
+            <param name="Code"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.FrontGalleryMediaController.Get(System.Int32)">
+            <summary>
+            Get By Id
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.FrontGalleryMediaController.GetList">
+            <summary>
+            Get All List
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.FrontGalleryMediaController.Add(PT.MediatR.Commands.AddFrontGalleryMediaCommand)">
+            <summary>
+            Create Add FrontGalleryMedia.
+            </summary>
+            <param name="addFrontGalleryMediaCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.FrontGalleryMediaController.Update(PT.MediatR.Commands.UpdateFrontGalleryMediaCommand)">
+            <summary>
+            Update FrontGalleryMedia.
+            </summary>
+            <param name="updateFrontGalleryMediaCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.FrontGalleryMediaController.Delete(System.Int32)">
+            <summary>
+            Delete
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.FrontGalleryRecordController.Get(System.Int32)">
+            <summary>
+            Get By Id
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.FrontGalleryRecordController.GetList">
+            <summary>
+            Get All List
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.FrontGalleryRecordController.Add(PT.MediatR.Commands.AddFrontGalleryRecordCommand)">
+            <summary>
+            Create Add FrontGalleryRecord.
+            </summary>
+            <param name="addFrontGalleryRecordCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.FrontGalleryRecordController.Update(PT.MediatR.Commands.UpdateFrontGalleryRecordCommand)">
+            <summary>
+            Update FrontGalleryRecord.
+            </summary>
+            <param name="updateFrontGalleryRecordCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.FrontGalleryRecordController.Delete(System.Int32)">
+            <summary>
+            Delete
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.FrontMenuController.Get(System.Guid)">
+            <summary>
+            Get By Id
+            </summary>
+            <param name="Code"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.FrontMenuController.GetList(System.String)">
+            <summary>
+            Get All List
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.FrontMenuController.Add(PT.MediatR.Commands.AddFrontMenuCommand)">
+            <summary>
+            Create Add FrontMenu.
+            </summary>
+            <param name="addFrontMenuCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.FrontMenuController.Update(PT.MediatR.Commands.UpdateFrontMenuCommand)">
+            <summary>
+            Update FrontMenu.
+            </summary>
+            <param name="updateFrontMenuCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.FrontMenuController.Delete(System.Guid)">
+            <summary>
+            Delete
+            </summary>
+            <param name="Code"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.FrontMenuRecordController.Get(System.Int32)">
+            <summary>
+            Get By Id
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.FrontMenuRecordController.GetList">
+            <summary>
+            Get All List
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.FrontMenuRecordController.Add(PT.MediatR.Commands.AddFrontMenuRecordCommand)">
+            <summary>
+            Create Add FrontMenuRecord.
+            </summary>
+            <param name="addFrontMenuRecordCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.FrontMenuRecordController.Update(PT.MediatR.Commands.UpdateFrontMenuRecordCommand)">
+            <summary>
+            Update FrontMenuRecord.
+            </summary>
+            <param name="updateFrontMenuRecordCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.FrontMenuRecordController.Delete(System.Int32)">
+            <summary>
+            Delete
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.FrontPageController.Get(System.Guid)">
+            <summary>
+            Get By Id
+            </summary>
+            <param name="Code"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.FrontPageController.GetList(System.String)">
+            <summary>
+            Get All List
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.FrontPageController.Add(PT.MediatR.Commands.AddFrontPageCommand)">
+            <summary>
+            Create Add FrontPage.
+            </summary>
+            <param name="addFrontPageCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.FrontPageController.Update(PT.MediatR.Commands.UpdateFrontPageCommand)">
+            <summary>
+            Update FrontPage.
+            </summary>
+            <param name="updateFrontPageCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.FrontPageController.Delete(System.Guid)">
+            <summary>
+            Delete
+            </summary>
+            <param name="Code"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.FrontPageRecordController.Get(System.Guid)">
+            <summary>
+            Get By Id
+            </summary>
+            <param name="Code"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.FrontPageRecordController.GetList">
+            <summary>
+            Get All List
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.FrontPageRecordController.Add(PT.MediatR.Commands.AddFrontPageRecordCommand)">
+            <summary>
+            Create Add FrontPageRecord.
+            </summary>
+            <param name="addFrontPageRecordCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.FrontPageRecordController.Update(PT.MediatR.Commands.UpdateFrontPageRecordCommand)">
+            <summary>
+            Update FrontPageRecord.
+            </summary>
+            <param name="updateFrontPageRecordCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.FrontPageRecordController.Delete(System.Guid)">
+            <summary>
+            Delete
+            </summary>
+            <param name="Code"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.Gender.GenderController.GetGenders">
+            <summary>Get Genders</summary><return></return>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.HacFormController.RegistrationForm(CenazeFonu.MediatR.Commands.AddHacFormCommand)">
+            <summary>Hajj registration form</summary>
+            <return></return>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.HacFormController.GetAllCandidates(System.Int32,System.Int32,System.String,System.Nullable{System.Int32})">
+            <summary>Get All Hajj Candidates</summary><return></return>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.HacFormController.GetCandidateById(System.Int32)">
+            <summary>Get Hajj Candidate By Id</summary>
+            <return></return>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.HacFormController.UpdateCandidateById(CenazeFonu.MediatR.Commands.UpdateHacFormCommand)">
+            <summary>Update Candidate By Id </summary>
+            <return></return>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.HacFormController.DeleteById(System.Int32)">
+            <summary>Delete Application By Id</summary><return></return>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.HacFormController.GetHACMemberCardPDF(System.Int32)">
+            <summary> Get Hac's Member Card PDF </summary><returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.Language.LanguageController.GetAllLanguages">
+            <summary> Get All Languages </summary><returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.Language.LanguageController.GetLanguageByID(System.Int32)">
+            <summary> Get Language By ID </summary><returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.Language.LanguageController.GetLanguageByID(System.String)">
+            <summary> Get Language By Langcode </summary><returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.Language.LanguageController.AddLanguage(CenazeFonu.MediatR.Commands.AddLanguageCommand)">
+            <summary> Add Language </summary><returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.Language.LanguageController.UpdateLanguage(CenazeFonu.MediatR.Commands.UpdateLanguageCommand)">
+            <summary> Update Language </summary><returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.Language.LanguageController.DeleteLanguage(System.Int32)">
+            <summary> Delete Language </summary><returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.LoginAudit.LoginAuditController.GetLoginAudit(CenazeFonu.Data.Resources.LoginAuditResource)">
+            <summary>
+            Get All Login Audit detail
+            </summary>
+            <param name="loginAuditResource"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.MemberType.MemberTypeController.GetAll">
+            <summary>Get All Member Types</summary><return></return>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.MemberType.MemberTypeController.GetById(System.Int32)">
+            <summary>Get Member Type By Id</summary><return></return>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.MemberType.MemberTypeController.Add(CenazeFonu.MediatR.Commands.AddMemberTypeCommand)">
+            <summary>Add New Member Type</summary><return></return>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.MemberType.MemberTypeController.Update(CenazeFonu.MediatR.Commands.UpdateMemberTypeCommand)">
+            <summary>Update Member Type</summary><return></return>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.MemberType.MemberTypeController.Delete(System.Int32)">
+            <summary>Delete Member Type</summary>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.MosqueController.GetAll">
+            <summary>Get All Mosques</summary><return></return>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.MosqueController.GetById(System.Int32)">
+            <summary>Get Mosque By Id</summary><return></return>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.MosqueController.Add(CenazeFonu.MediatR.Commands.AddMosqueCommand)">
+            <summary>Add Mosque</summary><return></return>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.MosqueController.Update(CenazeFonu.MediatR.Commands.UpdateMosqueCommand)">
+            <summary>Update Mosque</summary><return></return>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.MosqueController.Delete(System.Int32)">
+            <summary>Delete Mosque</summary><return></return>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.NewsController.GetAll">
+            <summary>Get All News</summary><return></return>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.NewsController.GetById(System.Int32)">
+            <summary>Get News By Id</summary><return></return>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.NewsController.Add(CenazeFonu.MediatR.Commands.AddNewsCommand)">
+            <summary>Add News</summary><return></return>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.NewsController.Update(CenazeFonu.MediatR.Commands.UpdateNewsCommand)">
+            <summary>Update News</summary><return></return>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.NewsController.Delete(System.Int32)">
+            <summary>Delete News</summary><return></return>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.NLogController.GetNLogs(CenazeFonu.Data.Resources.NLogResource)">
+            <summary>
+            Get System Logs
+            </summary>
+            <param name="nLogResource"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.NLogController.GetNLog(System.Guid)">
+            <summary>
+            Get Log By Id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.NLogController.CreatNLog(CenazeFonu.MediatR.Commands.AddLogCommand)">
+            <summary>
+            Create Log.
+            </summary>
+            <param name="addLogCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.NoteController.GetAllFamilyNotes">
+            <summary> Get All Family Notes </summary><returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.NoteController.GetByIdF(System.Int32)">
+            <summary> Get Family Note By ID</summary><returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.NoteController.GetByFamilyId(System.Guid)">
+            <summary> Get Families Notes By Family ID</summary><returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.NoteController.GetAll">
+            <summary> Get All Notes </summary><returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.NoteController.GetById(System.Int32)">
+            <summary> Get Note By ID</summary><returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.NoteController.GetByMinAndMaxAge(System.Guid)">
+            <summary> Get User's Notes By User ID</summary><returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.NoteController.Add(CenazeFonu.MediatR.Commands.AddNoteCommand)">
+            <summary> Add Note </summary><returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.NoteController.Update(CenazeFonu.MediatR.Commands.UpdateNoteCommand)">
+            <summary> Update Note </summary><returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.NoteController.Delete(System.Int32)">
+            <summary> Delete Note </summary><returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.NoteController.AddFamilyNote(CenazeFonu.MediatR.Commands.AddFamilyNoteCommand)">
+            <summary> Add Family Note </summary><returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.NoteController.UpdateFamilyNote(CenazeFonu.MediatR.Commands.UpdateFamilyNoteCommand)">
+            <summary> Update Family Note </summary><returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.NoteController.Family(System.Int32)">
+            <summary> Delete Family Note </summary><returns></returns>
+        </member>
+        <member name="T:CenazeFonu.API.Controllers.PageActionController">
+            <summary>
+            Page Action
+            </summary>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.PageActionController.#ctor(MediatR.IMediator)">
+            <summary>
+            Page Action
+            </summary>
+            <param name="mediator"></param>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.PageActionController.GetPageActions">
+            <summary>
+            Get All Page Actions
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.PageActionController.AddPageAction(CenazeFonu.MediatR.Commands.AddPageActionCommand)">
+            <summary>
+            Add Page Action
+            </summary>
+            <param name="addPageActionCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.PageActionController.DeletePageAction(System.Guid)">
+            <summary>
+            Delete Page Action By Id
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:CenazeFonu.API.Controllers.PageController">
+            <summary>
+            Page
+            </summary>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.PageController.#ctor(MediatR.IMediator)">
+            <summary>
+            Page
+            </summary>
+            <param name="mediator"></param>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.PageController.GetPage(System.Guid)">
+            <summary>
+            Get Page By Id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.PageController.GetPages">
+            <summary>
+            Get All Pages
+            </summary>
+            <returns>Test</returns>
+            <response code="200">Returns the newly created item</response>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.PageController.AddPage(CenazeFonu.MediatR.Commands.AddPageCommand)">
+            <summary>
+            Create a Page
+            </summary>
+            <param name="addPageCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.PageController.UpdatePage(System.Guid,CenazeFonu.MediatR.Commands.UpdatePageCommand)">
+            <summary>
+            Update Page By Id
+            </summary>
+            <param name="Id"></param>
+            <param name="updatePageCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.PageController.DeletePage(System.Guid)">
+            <summary>
+            Delete Page By Id
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.PeriodController.Add(CenazeFonu.MediatR.Commands.AddHacPeriodCommand)">
+            <summary>
+            Add Hac Period
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.PeriodController.Add(CenazeFonu.MediatR.Commands.AddUmrePeriodCommand)">
+            <summary>
+            Add Umre Period
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.PeriodController.Update(CenazeFonu.MediatR.Commands.UpdateHacPeriodCommand)">
+            <summary>
+            Update Hac Period
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.PeriodController.Update(CenazeFonu.MediatR.Commands.UpdateUmrePeriodCommand)">
+            <summary>
+            Update Umre Period
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.PeriodController.GetListHP">
+            <summary>
+            Get List Hac Periods
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.PeriodController.GetListUP">
+            <summary>
+            Get List Umre Periods
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.ProjectController.GetAllProjects">
+            <summary> Get All Projects </summary><returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.ProjectController.GetProjectByID(System.Int32)">
+            <summary> Get Project By ID </summary><returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.ProjectController.AddProject(CenazeFonu.MediatR.Commands.AddProjectCommand)">
+            <summary> Add Project </summary><returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.ProjectController.UpdateProject(CenazeFonu.MediatR.Commands.UpdateProjectCommand)">
+            <summary> Update Project </summary><returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.ProjectController.DeleteProject(System.Int32)">
+            <summary> Delete Project </summary><returns></returns>
+        </member>
+        <member name="T:CenazeFonu.API.Controllers.RoleController">
+            <summary>
+            Role
+            </summary>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.RoleController.#ctor(MediatR.IMediator)">
+            <summary>
+            Role
+            </summary>
+            <param name="mediator"></param>
+            <param name="logger"></param>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.RoleController.AddRole(CenazeFonu.MediatR.Commands.AddRoleCommand)">
+            <summary>
+            Create A Role
+            </summary>
+            <param name="addRoleCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.RoleController.UpdateRole(System.Guid,CenazeFonu.MediatR.Commands.UpdateRoleCommand)">
+            <summary>
+            Update Exist Role By Id
+            </summary>
+            <param name="id"></param>
+            <param name="updateRoleCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.RoleController.GetRole(System.Guid)">
+            <summary>
+            Get Role By Id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.RoleController.GetRoles">
+            <summary>
+            Get All Roles
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.RoleController.DeleteRole(System.Guid)">
+            <summary>
+            Delete Role By Id
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:CenazeFonu.API.Controllers.RoleUsersController">
+            <summary>
+            RoleUsers
+            </summary>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.RoleUsersController.#ctor(MediatR.IMediator)">
+            <summary>
+            RoleUsers
+            </summary>
+            <param name="mediator"></param>
+            <param name="logger"></param>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.RoleUsersController.RoleUsers(System.Guid)">
+            <summary>
+            Get Role Users By Id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.RoleUsersController.UpdateRoleUsers(System.Guid,CenazeFonu.MediatR.Commands.UpdateUserRoleCommand)">
+            <summary>
+            Update Role Users By Id
+            </summary>
+            <param name="id"></param>
+            <param name="updateRoleCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.RoomTypeController.GetAllRoomTypes">
+            <summary>Get All Room Types</summary><return></return>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.RoomTypeController.GetById(System.Int32)">
+            <summary>Get Room Type By Id</summary><return></return>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.RoomTypeController.Add(CenazeFonu.MediatR.Commands.AddRoomTypeCommand)">
+            <summary>Add New Room Type</summary><return></return>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.RoomTypeController.Update(CenazeFonu.MediatR.Commands.UpdateRoomTypeCommand)">
+            <summary>Update Room Type</summary><return></return>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.RoomTypeController.Delete(System.Int32)">
+            <summary>Delete Room Type</summary>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.ServiceController.GetList">
+            <summary>Get All Services</summary><return></return>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.ServiceController.GetById(System.Int32)">
+            <summary>Get Service By Id</summary><return></return>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.ServiceController.Create(CenazeFonu.MediatR.Commands.AddServicesCommand)">
+            <summary>Create Service</summary><return></return>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.ServiceController.Update(CenazeFonu.MediatR.Commands.UpdateServicesCommand)">
+            <summary>Update Service</summary><return></return>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.ServiceController.Update(System.Int32)">
+            <summary>Delete Service</summary><return></return>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.SMSController.SendSMS(System.String,System.String)">
+            <summary>Send a SMS</summary><returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.Translation.TranslationController.GetAllTranslations">
+            <summary> Get All Translations </summary><returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.Translation.TranslationController.GetTranslationByID(System.Int32)">
+            <summary> Get Translation By ID </summary><returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.Translation.TranslationController.AddTranslation(CenazeFonu.MediatR.Commands.AddTranslationCommand)">
+            <summary> Add Translation </summary><returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.Translation.TranslationController.UpdateTranslation(CenazeFonu.MediatR.Commands.UpdateTranslationCommand)">
+            <summary> Update Translation </summary><returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.Translation.TranslationController.DeleteTranslation(System.Int32)">
+            <summary> Delete Translation </summary><returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.UmreFormController.RegistrationForm(CenazeFonu.MediatR.Commands.AddUmreFormCommand)">
+            <summary>Umrah registration form</summary>
+            <return></return>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.UmreFormController.GetUmrahCandidateById(System.Int32)">
+            <summary>Get Umrah Candidate By Id</summary>
+            <return></return>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.UmreFormController.GetAllCandidates(System.Int32,System.Int32,System.String,System.Nullable{System.Int32})">
+            <summary>Get All Umrah Candidates</summary><return></return>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.UmreFormController.UpdateUmrahCandidateById(CenazeFonu.MediatR.Commands.UpdateUmreFormCommand)">
+            <summary>Update Candidate By Id </summary>
+            <return></return>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.UmreFormController.DeleteById(System.Int32)">
+            <summary>Delete Application By Id</summary><return></return>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.UmreFormController.GetUmrahMemberCardPDF(System.Int32)">
+            <summary> Get Umrah's Member Card PDF </summary><returns></returns>
+        </member>
+        <member name="T:CenazeFonu.API.Controllers.UserClaimController">
+            <summary>
+            UserClaim
+            </summary>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.UserClaimController.#ctor(MediatR.IMediator)">
+            <summary>
+            UserClaim
+            </summary>
+            <param name="mediator"></param>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.UserClaimController.UpdateUserClaim(System.Guid,CenazeFonu.MediatR.Commands.UpdateUserClaimCommand)">
+            <summary>
+            Update User Claim By Id
+            </summary>
+            <param name="id"></param>
+            <param name="addUserCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="T:CenazeFonu.API.Controllers.UserController">
+            <summary>
+            User
+            </summary>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.UserController.#ctor(MediatR.IMediator,CenazeFonu.Data.Dto.UserInfoToken,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
+            <summary>
+            User
+            </summary>
+            <param name="mediator"></param>
+            <param name="userInfo"></param>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.UserController.GetUsersDetail">
+            <summary>Get All Users Detail </summary>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.UserController.GetUsersPagination(System.Int32,System.Int32,System.Nullable{System.Boolean},System.Nullable{System.Boolean},System.Int32,System.String,System.String,System.Int32,System.Int32)">
+            <summary>Get Users Pagination </summary>
+            <return></return>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.UserController.GetUserDetailByUserId(System.Guid)">
+            <summary>Get User Detail By Id</summary>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.UserController.AddUser(CenazeFonu.MediatR.Commands.AddUserCommand)">
+            <summary>
+             Create a User
+            </summary>
+            <param name="addUserCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.UserController.UpdateUserContactInformation(CenazeFonu.MediatR.Commands.UpdateUserInformationCommand)">
+            <summary>
+            Update User Contact Information
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.UserController.UpdateAllUsersPassword(CenazeFonu.MediatR.Commands.User.ResetAllUsersPasswordCommand)">
+            <summary>
+            Update All User's Password
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.UserController.GetAllUsers">
+            <summary>
+            Get All Users
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.UserController.GetUser(System.Guid)">
+            <summary>
+            Get User By Id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.UserController.GetUsers(CenazeFonu.Data.Resources.UserResource)">
+            <summary>
+            Get Users
+            </summary>
+            <param name="userResource"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.UserController.GetRecentlyRegisteredUsers">
+            <summary>
+            Get Recently Registered Users
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.UserController.UserLogin(CenazeFonu.MediatR.Commands.UserLoginCommand)">
+            <summary>
+            User Login
+            </summary>
+            <param name="userLoginCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.UserController.UpdateUser(System.Guid,CenazeFonu.MediatR.Commands.UpdateUserCommand)">
+            <summary>
+            Update User By Id
+            </summary>
+            <param name="id"></param>
+            <param name="updateUserCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.UserController.UpdateUserProfile(CenazeFonu.MediatR.Commands.UpdateUserProfileCommand)">
+            <summary>
+            Update Profile
+            </summary>
+            <param name="id"></param>
+            <param name="updateUserProfileCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.UserController.UpdateUserProfilePhoto">
+            <summary>
+            Update Profile photo
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.UserController.DeleteUser(System.Guid)">
+            <summary>
+            Delete User By Id
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.UserController.ChangePassword(CenazeFonu.MediatR.Commands.ChangePasswordCommand)">
+            <summary>
+            User Change Password
+            </summary>
+            <param name="resetPasswordCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.UserController.ResetPassword(CenazeFonu.MediatR.Commands.ResetPasswordCommand)">
+            <summary>
+            Reset Resetpassword
+            </summary>
+            <param name="newPasswordCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CenazeFonu.API.Controllers.UserController.GetProfile">
+            <summary>
+            Get User Profile
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
