@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="11.0.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.SignalR" Version="1.1.0" />
+    <PackageReference Include="System.Linq.Dynamic.Core" Version="1.2.19" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ContentManagement.Common\ContentManagement.Common.csproj" />
+    <ProjectReference Include="..\ContentManagement.Data\ContentManagement.Data.csproj" />
+    <ProjectReference Include="..\ContentManagement.Domain\ContentManagement.Domain.csproj" />
+    <ProjectReference Include="..\ContentManagement.Helper\ContentManagement.Helper.csproj" />
+  </ItemGroup>
+
+</Project>

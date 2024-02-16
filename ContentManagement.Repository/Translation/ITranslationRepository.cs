@@ -1,0 +1,16 @@
+﻿using ContentManagement.Data;
+using ContentManagement.Common.GenericRespository;
+using ContentManagement.Data;
+using ContentManagement.Data.Models;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ContentManagement.Repository
+{
+    public interface ITranslationRepository : IGenericRepository<Translation>
+    {
+    }
+}

@@ -1,0 +1,18 @@
+﻿using ContentManagement.Common.GenericRespository;
+using ContentManagement.Data.Models;
+using ContentManagement.Data.Resources;
+using ContentManagement.Helper;
+using Microsoft.AspNetCore.Http.Features;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ContentManagement.Repository
+{
+    public interface IFamilyRepository : IGenericRepository<Family>
+    {
+        Task<FamilyList> GetFamilies(FamilyResource familyResource);
+    }
+}
