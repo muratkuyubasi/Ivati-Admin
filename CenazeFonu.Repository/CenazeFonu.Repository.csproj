@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="11.0.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.SignalR" Version="1.1.0" />
+    <PackageReference Include="System.Linq.Dynamic.Core" Version="1.2.19" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CenazeFonu.Common\CenazeFonu.Common.csproj" />
+    <ProjectReference Include="..\CenazeFonu.Data\CenazeFonu.Data.csproj" />
+    <ProjectReference Include="..\CenazeFonu.Domain\CenazeFonu.Domain.csproj" />
+    <ProjectReference Include="..\CenazeFonu.Helper\CenazeFonu.Helper.csproj" />
+  </ItemGroup>
+
+</Project>
