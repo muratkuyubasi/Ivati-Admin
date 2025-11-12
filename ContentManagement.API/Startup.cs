@@ -127,7 +127,7 @@ namespace ContentManagement.API
                 c.SwaggerDoc("v1", new OpenApiInfo
                 {
                     Version = "v1",
-                    Title = "Italya Diyanet API"
+                    Title = "İçerik Yönetim Sistemi API"
                 });
 
                 c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
@@ -208,7 +208,7 @@ namespace ContentManagement.API
             app.UseSwaggerUI(c =>
             {
                 c.DefaultModelsExpandDepth(-1);
-                c.SwaggerEndpoint($"v1/swagger.json", "Italya Diyanet");
+                c.SwaggerEndpoint($"v1/swagger.json", "İçerik Yönetim ");
                 c.RoutePrefix = "swagger";
             });
             app.UseStaticFiles();
